@@ -18,7 +18,8 @@ import os
 from typing import Annotated, Literal, Optional
 from typing_extensions import TypedDict
 
-from langchain_anthropic import ChatAnthropic
+#from langchain_anthropic import ChatAnthropic
+from langchain_groq import ChatGroq
 from langchain_chroma import Chroma
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, BaseMessage
 from langchain_core.prompts import ChatPromptTemplate
@@ -149,14 +150,21 @@ class InterviewAgent:
 
     # ── Initialization ────────────────────────────────────────────────────────
 
-    def _init_llm(self) -> ChatAnthropic:
-        return ChatAnthropic(
+    # def _init_llm(self) -> ChatAnthropic:
+    #     return ChatAnthropic(
+    #         model=LLM_MODEL,
+    #         temperature=LLM_TEMPERATURE,
+    #         max_tokens=LLM_MAX_TOKENS,
+    #         anthropic_api_key=os.environ["ANTHROPIC_API_KEY"],
+    #     )
+    
+    def _init_llm(self):
+        return ChatGroq(
             model=LLM_MODEL,
             temperature=LLM_TEMPERATURE,
             max_tokens=LLM_MAX_TOKENS,
-            anthropic_api_key=os.environ["ANTHROPIC_API_KEY"],
+            groq_api_key=os.environ["GROQ_API_KEY"],
         )
-
     def _init_vectorstore(self) -> Chroma:
         embeddings = HuggingFaceEmbeddings(
             model_name=EMBEDDING_MODEL,

@@ -10,30 +10,22 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# ── Project Paths ─────────────────────────────────────────────────────────────
 BASE_DIR = Path(__file__).parent
 STUDY_MATERIAL_DIR = BASE_DIR / "study_material"
 CHROMA_PERSIST_DIR = os.getenv("CHROMA_PERSIST_DIR", str(BASE_DIR / "chroma_db"))
 
-# ── ChromaDB Settings ─────────────────────────────────────────────────────────
 COLLECTION_NAME = os.getenv("COLLECTION_NAME", "deep_learning_study")
-
-# ── Embedding Model (local, no API key needed) ────────────────────────────────
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
 
-# ── LLM Settings ──────────────────────────────────────────────────────────────
-LLM_MODEL = os.getenv("LLM_MODEL", "claude-3-5-haiku-20241022")
-LLM_TEMPERATURE = 0.4          # Slight creativity for quiz variety
+LLM_MODEL = os.getenv("LLM_MODEL", "groq/compound-mini")
+LLM_TEMPERATURE = 0.4
 LLM_MAX_TOKENS = 1024
 
-# ── Text Splitting ────────────────────────────────────────────────────────────
-CHUNK_SIZE = 512               # Characters per chunk
-CHUNK_OVERLAP = 64             # Overlap to preserve context at boundaries
+CHUNK_SIZE = 512
+CHUNK_OVERLAP = 64
 
-# ── Retrieval ─────────────────────────────────────────────────────────────────
 TOP_K_RETRIEVAL = int(os.getenv("TOP_K_RETRIEVAL", "5"))
 
-# ── Study Topics (for `topics` command) ───────────────────────────────────────
 STUDY_TOPICS = [
     "01 — Neural Networks Fundamentals",
     "02 — Backpropagation & Gradients",
@@ -44,13 +36,11 @@ STUDY_TOPICS = [
     "07 — Regularization Techniques",
 ]
 
-# ── Validation ────────────────────────────────────────────────────────────────
 def validate_env() -> None:
-    """Raise early with a helpful message if required env vars are missing."""
-    if not os.getenv("ANTHROPIC_API_KEY"):
+    if not os.getenv("GROQ_API_KEY"):
         raise EnvironmentError(
-            "\n[CONFIG ERROR] ANTHROPIC_API_KEY is not set.\n"
+            "\n[CONFIG ERROR] GROQ_API_KEY is not set.\n"
             "  1. Copy .env.example → .env\n"
-            "  2. Add your key: ANTHROPIC_API_KEY=sk-ant-...\n"
+            "  2. Add your key: GROQ_API_KEY=gsk_...\n"
             "  3. Re-run the script.\n"
         )
