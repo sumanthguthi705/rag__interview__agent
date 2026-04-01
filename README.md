@@ -1,3 +1,6 @@
+Presentation recording Link - https://myunt-my.sharepoint.com/:v:/g/personal/murarinalabothu_my_unt_edu/IQDkrhW8Tt53SZ6FuLYzkjosAa5EJhqKyihbUGVHSrNIxWY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8s4Evx
+
+
 # RAG-Powered Deep Learning Interview Preparation Agent
 
 A production-grade, agentic interview prep system built with **LangChain**, **LangGraph**, and **ChromaDB**. The agent ingests authored deep learning study material, stores it in a persistent vector database, and enables intelligent chat-based Q&A with two modes: **free-form RAG chat** and **structured quiz generation with answer evaluation**.
