@@ -1,4 +1,4 @@
-Presentation recording Link - https://myunt-my.sharepoint.com/:v:/g/personal/murarinalabothu_my_unt_edu/IQDkrhW8Tt53SZ6FuLYzkjosAa5EJhqKyihbUGVHSrNIxWY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8s4Evx
+Presentation recording Link - https://drive.google.com/file/d/1iwTSXMNX6KyXBylx51mb4k5cFIILzKKE/view?usp=drive_link
 
 
 # RAG-Powered Deep Learning Interview Preparation Agent
