@@ -111,11 +111,11 @@ Once running, the agent supports three interaction modes detected automatically:
 
 | Role              | You Own                                  | Go To                | Name                         |
 |------------------|------------------------------------------|----------------------|------------------------------|
-| Corpus Architect | `data/corpus/`                           | → Corpus Architect   | YOUR_NAME                    |
-| Pipeline Engineer| `config.py`, `store.py`, `nodes.py`, `graph.py` | → Pipeline Engineer  | YOUR_NAME                    |
-| UX Lead          | `ui/app.py`                              | → UX Lead            | YOUR_NAME                    |
-| Prompt Engineer  | `prompts.py`                             | → Prompt Engineer    | YOUR_NAME                    |
-| QA Lead          | `tests/`, `demo script`                  | → QA Lead            | YOUR_NAME                    |
+| Corpus Architect | `data/corpus/`                           | → Corpus Architect   | Nalabothu,Murari                    |
+| Pipeline Engineer| `config.py`, `store.py`, `nodes.py`, `graph.py` | → Pipeline Engineer  | Babu, HARIHARAN                    |
+| UX Lead          | `ui/app.py`                              | → UX Lead            | Boddu, Pranathi                    |
+| Prompt Engineer  | `prompts.py`                             | → Prompt Engineer    | SUMANTH MALLESH GUTHI                   |
+| QA Lead          | `tests/`, `demo script`                  | → QA Lead            | Kasaraneni, Pranay Krishna                  |
 
 ## Project Structure
 
