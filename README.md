@@ -106,6 +106,17 @@ Once running, the agent supports three interaction modes detected automatically:
 
 ---
 
+## 👋 Find Your Role
+
+
+| Role              | You Own                                  | Go To                | Name                         |
+|------------------|------------------------------------------|----------------------|------------------------------|
+| Corpus Architect | `data/corpus/`                           | → Corpus Architect   | YOUR_NAME                    |
+| Pipeline Engineer| `config.py`, `store.py`, `nodes.py`, `graph.py` | → Pipeline Engineer  | YOUR_NAME                    |
+| UX Lead          | `ui/app.py`                              | → UX Lead            | YOUR_NAME                    |
+| Prompt Engineer  | `prompts.py`                             | → Prompt Engineer    | YOUR_NAME                    |
+| QA Lead          | `tests/`, `demo script`                  | → QA Lead            | YOUR_NAME                    |
+
 ## Project Structure
 
 ```
