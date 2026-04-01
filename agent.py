@@ -235,10 +235,8 @@ class InterviewAgent:
             k=TOP_K_RETRIEVAL,
         )
 
-        # Filter low-relevance results (score < 0.3)
-        filtered = [(doc, score) for doc, score in results if score >= 0.3]
-        if not filtered:
-            filtered = results[:2]  # Fallback: take top 2 regardless
+        # Filter low-relevance results (score >= 0.0 to include only relevant docs)
+        filtered = [(doc, score) for doc, score in results if score >= 0.0]
 
         docs = [doc for doc, _ in filtered]
         doc_texts = [doc.page_content for doc in docs]

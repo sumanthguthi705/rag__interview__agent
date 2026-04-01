@@ -17,7 +17,8 @@ CHROMA_PERSIST_DIR = os.getenv("CHROMA_PERSIST_DIR", str(BASE_DIR / "chroma_db")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME", "deep_learning_study")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
 
-LLM_MODEL = os.getenv("LLM_MODEL", "groq/compound-mini")
+#LLM_MODEL = os.getenv("LLM_MODEL", "groq/compound-mini")
+LLM_MODEL = os.getenv("LLM_MODEL", "llama-3.1-8b-instant")
 LLM_TEMPERATURE = 0.4
 LLM_MAX_TOKENS = 1024
 
